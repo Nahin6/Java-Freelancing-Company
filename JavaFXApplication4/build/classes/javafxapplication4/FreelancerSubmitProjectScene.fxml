@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="869.0" prefWidth="1007.0" style="-fx-background-color: #22c9c0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.FreelancerSubmitProjectSceneController">
+   <children>
+      <Label layoutX="192.0" layoutY="68.0" text="Here you can send the project you finished" textFill="#6f0303">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font></Label>
+      <Button layoutX="221.0" layoutY="521.0" mnemonicParsing="false" onAction="#UploadFileButtonClick" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: black;" text="Upload your File" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="UploadedFileFxid" layoutX="185.0" layoutY="268.0" prefHeight="200.0" prefWidth="719.0" promptText="Upload File" />
+      <Button layoutX="641.0" layoutY="521.0" mnemonicParsing="false" onAction="#SendToCustomerButtonClick" prefHeight="45.0" prefWidth="194.0" style="-fx-background-color: black;" text="Send to Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label fx:id="SendConfirmationlabel" layoutX="529.0" layoutY="634.0" prefHeight="125.0" prefWidth="383.0" textFill="#b20707">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="MainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="806.0" prefWidth="1095.0" style="-fx-background-color: #22c9c0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.CustomerSceneController">
+   <left>
+      <VBox prefHeight="300.0" prefWidth="143.0" spacing="20.0" style="-fx-background-color: #1dbb79;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#hireFreelancerButttonOnClick" prefHeight="66.0" prefWidth="142.0" style="-fx-background-color: #000000;" text="Hire a Freelancer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#payFreelancerButttonOnClick" prefHeight="58.0" prefWidth="143.0" style="-fx-background-color: #000000;" text="Pay Freelancer" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#TakeMembershipButtonOnClick" prefHeight="64.0" prefWidth="143.0" style="-fx-background-color: #000000;" text="Take Membership" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="255.0" mnemonicParsing="false" onAction="#ReceiveWorkButtonClick" prefHeight="64.0" prefWidth="143.0" style="-fx-background-color: #000000;" text="Receive your work" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ComplainBoxButtonOnClick" prefHeight="51.0" prefWidth="144.0" style="-fx-background-color: #000000;" text="Complain Box" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#HelpDeskButtonOnClick" prefHeight="59.0" prefWidth="145.0" style="-fx-background-color: #000000;" text="Help Desk" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="ClearView" layoutX="10.0" layoutY="302.0" mnemonicParsing="false" onAction="#ClearViewOFCustomerButtonOnClick" prefHeight="59.0" prefWidth="145.0" style="-fx-background-color: #000000;" text="Clear View" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="44.0" top="44.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="50.0" top="50.0" />
+         </padding>
+      </VBox>
+   </left>
+   <bottom>
+      <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#CustomerLogOutBttonClick" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #bdee0f;" text="Log Out" textFill="#ff0303" BorderPane.alignment="TOP_RIGHT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </bottom>
+   <center>
+      <ImageView fitHeight="525.0" fitWidth="535.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@customer-.png" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>

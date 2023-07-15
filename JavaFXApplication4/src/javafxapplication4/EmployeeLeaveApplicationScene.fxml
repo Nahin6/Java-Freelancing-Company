@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="866.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.EmployeeLeaveApplicationSceneController">
+   <children>
+      <Label layoutX="107.0" layoutY="53.0" text="Hello Dear Employee We appreciate your regular attendance and hard work" textFill="#970404">
+         <font>
+            <Font name="Gill Sans MT Bold" size="26.0" />
+         </font></Label>
+      <Label layoutX="258.0" layoutY="256.0" text="Enter your ID" textFill="#bf0000">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="318.0" text="Enter your name" textFill="#bf0000">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="425.0" text="Describe your Leave reason in details" textFill="#bf0000">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IDfoLeaveApFxID" layoutX="440.0" layoutY="259.0" promptText="ID" />
+      <TextField fx:id="NameForLeaveApFxID" layoutX="440.0" layoutY="321.0" promptText="Name" />
+      <TextArea fx:id="ReasonDetailsFxId" layoutX="79.0" layoutY="484.0" prefHeight="200.0" prefWidth="721.0" promptText="            Write in details">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="259.0" layoutY="369.0" text="Leave reason" textFill="#bf0000">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ReasonOfLeaveFxID" layoutX="440.0" layoutY="371.0" promptText="Subject" />
+      <Button layoutX="397.0" layoutY="700.0" mnemonicParsing="false" onAction="#SubmitLeaveApplicationButtonClick" style="-fx-background-color: black;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Label fx:id="SubmitDonelabel" layoutX="241.0" layoutY="768.0" prefHeight="84.0" prefWidth="421.0" textFill="#8d0b0b">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="92.0" text="In case if anyone need any emergency leave for one or two days you can make" textFill="#970404">
+         <font>
+            <Font name="Gill Sans MT Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="135.0" text="an application by filling this form. If your reasons are valid enough you can get your day off." textFill="#970404">
+         <font>
+            <Font name="Gill Sans MT Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

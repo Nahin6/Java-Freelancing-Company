@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="726.0" prefWidth="1153.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.LoadTakePaidServicesSceneController">
+   <children>
+      <Label layoutX="294.0" layoutY="42.0" text="Here are some Paid services you can get!!" textFill="#a40b0b">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font></Label>
+      <Label layoutX="91.0" layoutY="192.0" prefHeight="110.0" prefWidth="308.0" text="BASIS-EBL CO-BRANDED CREDIT CARD (MASTERCARD)" textFill="#12329e" wrapText="true">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="128.0" layoutY="324.0" mnemonicParsing="false" onAction="#GetEBLmasterCardButton" style="-fx-background-color: black;" text="Get It Now" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="460.0" layoutY="192.0" prefHeight="110.0" prefWidth="308.0" text="BASIS-BRAC BANK CO-BRANDED CREDIT CARD (VISA)" textFill="#12329e" wrapText="true">
+         <font>
+            <Font name="Bell MT Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="505.0" layoutY="324.0" mnemonicParsing="false" onAction="#GetBracbankCardButton" style="-fx-background-color: black;" text="Get It Now" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="823.0" layoutY="192.0" prefHeight="110.0" prefWidth="222.0" text="Rental Facilities at BASIS Premises" textFill="#12329e" wrapText="true">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="866.0" layoutY="324.0" mnemonicParsing="false" onAction="#GetRentalFacilityButton" style="-fx-background-color: black;" text="Get It Now" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="120.0" fitWidth="536.0" layoutX="148.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@credit__card-removebg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="536.0" layoutX="503.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@credit__card-removebg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="159.0" layoutX="859.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@officeLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

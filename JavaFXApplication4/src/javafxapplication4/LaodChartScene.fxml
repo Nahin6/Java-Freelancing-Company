@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="957.0" prefWidth="1285.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.LaodChartSceneController">
+   <children>
+      <Label layoutX="258.0" layoutY="137.0" text="user Information" textFill="#6b0202">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <LineChart fx:id="LineChartFXID" layoutX="137.0" layoutY="196.0" prefHeight="384.0" prefWidth="390.0" style="-fx-border-color: red;">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <PieChart fx:id="PieCharFxID" layoutX="712.0" layoutY="196.0" prefHeight="384.0" prefWidth="479.0" style="-fx-background-color: white;" />
+      <Label layoutX="848.0" layoutY="137.0" text="Profit Information" textFill="#7c0707">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <Label fx:id="piceChartlabel" layoutX="777.0" layoutY="719.0" prefHeight="70.0" prefWidth="342.0" textFill="#900000">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="248.0" layoutY="637.0" mnemonicParsing="false" onAction="#ViewLineChartButton" style="-fx-background-color: black;" text="View Chart" textFill="WHITE" />
+      <Button layoutX="905.0" layoutY="637.0" mnemonicParsing="false" onAction="#ViewPieChartButton" style="-fx-background-color: black;" text="View Chart" textFill="WHITE" />
+      <Label fx:id="lineChartlabel1" layoutX="137.0" layoutY="719.0" prefHeight="70.0" prefWidth="342.0" textFill="#900000">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="CeoBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="858.0" prefWidth="1284.0" style="-fx-background-color: #22c9c0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.CEOsceneController">
+   <left>
+      <VBox prefHeight="845.0" prefWidth="221.0" spacing="20.0" style="-fx-background-color: #1dbb79;" BorderPane.alignment="CENTER">
+         <children>
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#LaodProgressOfFreelancerButton" prefHeight="96.0" prefWidth="221.0" style="-fx-background-color: Black;" text="View Weekly Progress of Freelancers" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#LaodProgressOfCompanyButton" prefHeight="96.0" prefWidth="221.0" style="-fx-background-color: Black;" text="View Monthly Progress of the company" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#ViewChartButton" prefHeight="96.0" prefWidth="221.0" style="-fx-background-color: Black;" text="View Chart" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#LoadPaymentButton" prefHeight="96.0" prefWidth="221.0" style="-fx-background-color: Black;" text="View Leave Application of employees" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="298.0" mnemonicParsing="false" onAction="#LoaadFeedBackButton" prefHeight="96.0" prefWidth="221.0" style="-fx-background-color: Black;" text="See feedback from customers" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="582.0" mnemonicParsing="false" onAction="#ClearViewOfCeoButton" prefHeight="96.0" prefWidth="221.0" style="-fx-background-color: Black;" text="Clear View" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="44.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#CeoLogOutBttonClick" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #bdee0f;" text="Log Out" textFill="#ff0303" BorderPane.alignment="TOP_RIGHT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </bottom>
+   <center>
+      <ImageView fitHeight="615.0" fitWidth="790.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@CEO+Logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>

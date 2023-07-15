@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="809.0" prefWidth="1079.0" style="-fx-background-color: #22c9c0;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="javafxapplication4.CustomerPayMembershipSceneController">
+   <children>
+      <Label layoutX="165.0" layoutY="137.0" text="Select a Payment method" textFill="#790404">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="223.0" text="Enter number to send Payment" textFill="#790404">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="MethodComboBox" layoutX="543.0" layoutY="141.0" prefHeight="31.0" prefWidth="187.0" promptText="Select a method" />
+      <TextField fx:id="numberFXid" layoutX="543.0" layoutY="221.0" prefHeight="44.0" prefWidth="187.0" promptText="Bkash/Nagad/Rocket" />
+      <Button layoutX="444.0" layoutY="315.0" mnemonicParsing="false" onAction="#SendPayemntForMembership" prefHeight="44.0" prefWidth="168.0" style="-fx-background-color: black;" text="Send payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="899.0" layoutY="693.0" mnemonicParsing="false" onAction="#BAckPageButton" prefHeight="44.0" prefWidth="111.0" style="-fx-background-color: black;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="PayemntConfirmaitonLabel" layoutX="269.0" layoutY="402.0" prefHeight="90.0" prefWidth="518.0" textFill="#790303">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

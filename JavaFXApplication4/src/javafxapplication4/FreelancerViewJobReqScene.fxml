@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="959.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.FreelancerViewJobReqSceneController">
+   <children>
+      <Label layoutX="196.0" layoutY="79.0" prefHeight="111.0" prefWidth="604.0" text="Hello welcome please review these received jobs. If  you like any job and want to accept it , you can let the customer know that you are doing his job" textFill="#ab0000" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+      <TextArea fx:id="ViewJobReqTxtArea" editable="false" layoutX="141.0" layoutY="220.0" prefHeight="531.0" prefWidth="765.0" />
+   </children>
+</AnchorPane>
